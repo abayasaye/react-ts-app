@@ -1,10 +1,17 @@
 import "./Home.css";
 import React from "react";
 
-const  Home = (one:number,two:number):string =>{
+const  HeloWorld = (one:number,two:number):string =>{
   return "HELLO WORLD" 
- 
+
 }
 
+const Home = ()=>{
+  return(
+    <div>
+      {HeloWorld(1,2)}
+    </div>
+  )
+}
 
-export default Home(1,2);
+export default Home
