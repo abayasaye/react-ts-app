@@ -1,8 +1,13 @@
-const UserService = async ()=>{
+import IUser from "../models/user-model"
+
+export const UserService = async ():Promise<any>=>{
     try {
         return await fetch("https://my-json-server.typicode.com/Jeck99/fake-server/users")
-        .then((response)=>response.json())
-        .then((res)=>console.log(res)
+        .then((response:Response)=>response.json())
+        .then((res)=>{
+            let usersArray:IUser[]=res;
+            return usersArray;
+        }
         )
     } catch (error) {
         
@@ -11,4 +16,4 @@ const UserService = async ()=>{
 
     }
 }
-export default UserService
+UserService
