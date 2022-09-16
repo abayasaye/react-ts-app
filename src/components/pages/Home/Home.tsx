@@ -21,7 +21,16 @@ const Home = ()=>{
     <div>
       {HeloWorld(1,2)}
       {
-        usersArray?.map(user=><h1>{user.email}</h1>)
+        usersArray?.map(user=><h1>{`
+        ${user.id}
+        ${user.age}
+        ${user.name.first}
+        ${user.name.last}
+        ${user.email}
+        ${user.index}
+        ${user.phone}
+        ${user.picture}`}
+        </h1>)
       }
     </div>
   )
