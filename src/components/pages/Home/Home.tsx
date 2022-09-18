@@ -32,6 +32,7 @@ const Home = ()=>{
         ${user.picture}`}
         </h1>)
       }
+      <h1>BOOTOM</h1>
     </div>
   )
 }
