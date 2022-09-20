@@ -1,17 +1,18 @@
-import { useState } from 'react'
+import { useState } from "react";
 // import reactLogo from './assets/react.svg'
-import './App.css'
-import Home from './components/pages/Home/Home'
+import "./App.css";
+import AddUser from "./components/pages/AddUser/AddUser";
+import Home from "./components/pages/Home/Home";
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [count, setCount] = useState(0);
   return (
     <div className="App">
-      <Home/>
+      <AddUser/>
+      <Home />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
